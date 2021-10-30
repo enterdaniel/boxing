@@ -1,0 +1,31 @@
+
+<ion-content class="ion-padding ion-text-center">
+
+
+<div class="logo">
+  <img src="https://st3.depositphotos.com/31915596/33378/v/600/depositphotos_333789562-stock-illustration-fight-player-logo-design-vector.jpg">
+</div>
+
+<div class="form"> 
+
+  
+<ion-item lines="none">
+  <ion-input [(ngModel)]='email' placeholder="Enter email"></ion-input>
+</ion-item>
+
+<ion-item lines="none">
+  <ion-input [(ngModel)]='password' placeholder="Password" type="password"></ion-input>
+</ion-item>
+
+<ion-button [routerLink]="['/tab-inicial']"  color="danger" expand="block"> Login </ion-button>
+
+
+<ion-button [routerLink]="['/registro']" fill='clear'> Nuevo? Registrarse </ion-button>
+</div>
+
+
+<h6>{{email}}</h6>
+<h6>{{password}}</h6>
+
+</ion-content>
+
